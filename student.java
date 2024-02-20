@@ -2,7 +2,7 @@
  * The class "student" represents a student with specific details like name, program, department, and
  * registered courses, and has a method to display these details.
  */
-class student {
+class student extends course{
     String name = "Sanju";
     String program = "BCA";
     String department = "BCA";
@@ -21,6 +21,8 @@ class student {
     public static void main(String[] args) {
         student s = new student();
         s.Display();
+        s.Dispalymarks();
+        s.displayLessthanFourty();
         
     }
 }
